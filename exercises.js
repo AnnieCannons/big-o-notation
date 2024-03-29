@@ -10,6 +10,8 @@ function isEven(value){
     else
       return false;
   }
+  //O(1) reason Constant time complexity. 
+  //Regardless of the size of the input, the function performs a single operation to check if the value is even or odd.
   
 
   
@@ -25,6 +27,8 @@ function isEven(value){
       }
       return false;
   }
+  //O(n^2), Quadratic time complexity. 
+  //It has nested loops, and for each element in arr1,  and it iterates through all elements in arr2
   
   
 // 3. Doubler
@@ -35,6 +39,8 @@ function isEven(value){
       }
       return array;
   }
+  //O(n), its the Linear time complexity. 
+  //It iterates through each element in the array once, performing a constant-time operation for each element.
   
 
   
@@ -47,6 +53,9 @@ function isEven(value){
           }
       }
   }
+
+ // O(n),Linear time complexity. 
+ //It iterates through the array once, and the time it takes is directly proportional to the size of the array.
   
   
 // 5. Creating Pairs
@@ -58,6 +67,8 @@ function isEven(value){
           }
       }
   }
+  //O(n^2)  Quadratic time complexity. 
+  //It has nested loops, and for each element in the array, it iterates through all subsequent elements.
   
 
   
@@ -78,6 +89,8 @@ function isEven(value){
     }
     return result;
   }
+  //O(n) - Linear time complexity.
+  // It iterates num times, calculating each Fibonacci number once.
   
 
   
@@ -105,6 +118,8 @@ function isEven(value){
       }
       return -1;
   }
+  //O(log n), Logarithmic time complexity.
+  //It uses binary search, halving the search space at each step.
   
 
 // 8. Random element
@@ -112,6 +127,8 @@ function isEven(value){
   function findRandomElement(arr) {
       return arr[Math.floor(Math.random() * arr.length)];
   }
+  //O(1) - Constant time complexity. 
+  //It performs a constant number of operations regardless of the size of the array.
   
   
 // 9. Is It Prime?
@@ -125,6 +142,8 @@ function isEven(value){
       }
       return true;
   }
+  //O(n), Linear time complexity in the worst case.
+  //It iterates up to n to check for divisibility.
   
   
   
@@ -138,4 +157,6 @@ function isEven(value){
           default: return n * factorialOf(n - 1);
       }
   }
+  //O(n) - Linear time complexity.
+  //It calls itself recursively n times, decrementing n by 1 each time until it reaches the base case. So, the number of recursive calls is proportional to n.
   
